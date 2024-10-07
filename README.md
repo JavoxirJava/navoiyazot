@@ -1,1 +1,1 @@
-##Navoiyazot
+#Navoiyazot
