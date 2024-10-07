@@ -3,6 +3,7 @@
 :root {
     --brand-color: #FE7C00;
     --header-font: "Jost";
+    --max-width: 1750px;
 }
 
 * {
@@ -16,6 +17,15 @@
     padding: 0;
 }
 
+.vl {
+    width: 1px;
+    height: 100%;
+    background-color: #FE9E42;
+    margin: 0 35px;
+}
+
+/* Header start */
+
 .header {
     width: 1920px;
     height: 90px;
@@ -26,7 +36,7 @@
 .header_container {
     width: 100%;
     margin: auto;
-    max-width: 1750px;
+    max-width: var(--max-width);
     height: 36px;
     color: white;
 }
@@ -60,13 +70,6 @@
     text-decoration: none;
 }
 
-.vl {
-    width: 1px;
-    height: 100%;
-    background-color: #FE9E42;
-    margin: 0 35px;
-}
-
 .header_contact_2 .dropdown {
     width: 60px;
 }
@@ -91,3 +94,19 @@
     font-weight: 500;
 }
 
+/* Header end */
+
+/* Navbar start */
+
+.navbar-main {
+    width: 1920px;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid black; /* TODO deleted */
+}
+
+.navbar-main>div {
+    max-width: var(--max-width);
+    margin: auto;
+}
