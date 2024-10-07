@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand-color: #FE7C00;
+    --header-font: "Jost";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row>* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 1920px;
+    height: 90px;
+    background-color: var(--brand-color);
+    display: flex;
+}
+
+.header_container {
+    width: 100%;
+    margin: auto;
+    max-width: 1750px;
+    height: 36px;
+    color: white;
+}
+
+.header_container div {
+    height: 100%;
+}
+
+.header_contact>div {
+    display: flex;
+    align-items: center;
+}
+
+.header_contact>div>div {
+    flex-direction: column;
+    display: flex;
+}
+
+.header_contact>div>div>p {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    font-family: var(--header-font), sans-serif;
+}
+
+.header_contact>div>div:nth-child(3)>p {
+    padding-left: 35px;
+}
+
+.header_contact>div>div>p>a {
+    color: white;
+    text-decoration: none;
+}
+
+.vl {
+    width: 1px;
+    height: 100%;
+    background-color: #FE9E42;
+    margin: 0 35px;
+}
+
+.header_contact_2 .dropdown {
+    width: 60px;
+}
+
+.header_contact_2 .dropdown-menu {
+    min-width: 60px !important;
+}
+
+.header_contact_2>div {
+    align-items: center;
+    display: flex;
+}
+
+.header_contact_2>div:nth-child(3) svg {
+    margin: 0 5px;
+}
+
+.header_contact_2>div:nth-child(5) button {
+    background-color: #0B3E83;
+    font-size: 18px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
