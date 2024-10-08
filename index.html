@@ -107,68 +107,365 @@
         <!-- Navbar start -->
         <header class="navbar-main">
             <div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00195312 10.582C0.00195312 26.0589 0.00195312 41.5358 0.00195312 57.0127C0.46986 58.9563 2.16152 59.7122 4.21311 60.0001C15.1909 60.0001 26.1687 60.0001 37.1465 60.0361C41.5017 60.0361 41.3217 53.6294 40.026 52.3337L22.1015 36.2809L20.5179 34.8052C19.942 34.2653 19.2941 33.8334 18.4663 33.8334C16.9906 33.8334 15.8388 35.0211 15.8388 36.4608C15.8388 37.9366 17.0266 39.0883 18.4663 39.0883C19.762 39.0883 20.8058 38.1885 21.0577 36.9647L24.1891 41.0319C24.693 41.5358 24.4771 42.2917 23.2533 42.2917L12.2755 42.3277C10.2599 42.3277 8.38828 42.0037 9.61203 39.8802L18.5742 23.0355L47.1525 60.0361H52.0835C54.1711 59.8922 55.6468 59.7482 56.0068 57.2647V11.1219C56.0068 9.10632 53.6312 7.37866 51.5077 7.37866C46.7206 7.37866 42.0056 7.37866 37.1825 7.37866V0.0721256L30.6678 0.0361328V11.2659L25.0529 0.0361328H18.5382V7.34267H4.2851C2.34149 7.45065 0.181917 7.37866 0.0739387 10.618L0.00195312 10.582ZM18.3583 22.0637L3.06134 42.1117C3.06134 32.5376 3.02535 22.1357 3.02535 12.5616C3.02535 10.834 3.02535 10.69 5.00495 10.654H18.4663V20.696H24.981V11.2299L30.5958 20.696H37.1105V10.654C41.4657 10.654 45.7848 10.654 50.1399 10.654C52.6954 10.69 52.6954 10.726 52.6954 13.1375V42.2917L37.2185 22.0997H18.3223L18.3583 22.0637Z" fill="#3A6AB3"/>
-                        </svg>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            О нас
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Миссия</a></li>
-                                            <li><a class="dropdown-item" href="#">История</a></li>
-                                            <li><a class="dropdown-item" href="#">егодня</a></li>
-                                            <li><a class="dropdown-item" href="#">Перспективы развития </a></li>
-                                            <li><a class="dropdown-item" href="#">Паспорт предприятия</a></li>
-                                            <li>
-                                                <div class="btn-group dropend">
-                                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Инвестиционная деятельность
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a href="#">Внешняя задолженность</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">егодня</a></li>
-                                            <li><a class="dropdown-item" href="#">егодня</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+                    <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00195312 10.582C0.00195312 26.0589 0.00195312 41.5358 0.00195312 57.0127C0.46986 58.9563 2.16152 59.7122 4.21311 60.0001C15.1909 60.0001 26.1687 60.0001 37.1465 60.0361C41.5017 60.0361 41.3217 53.6294 40.026 52.3337L22.1015 36.2809L20.5179 34.8052C19.942 34.2653 19.2941 33.8334 18.4663 33.8334C16.9906 33.8334 15.8388 35.0211 15.8388 36.4608C15.8388 37.9366 17.0266 39.0883 18.4663 39.0883C19.762 39.0883 20.8058 38.1885 21.0577 36.9647L24.1891 41.0319C24.693 41.5358 24.4771 42.2917 23.2533 42.2917L12.2755 42.3277C10.2599 42.3277 8.38828 42.0037 9.61203 39.8802L18.5742 23.0355L47.1525 60.0361H52.0835C54.1711 59.8922 55.6468 59.7482 56.0068 57.2647V11.1219C56.0068 9.10632 53.6312 7.37866 51.5077 7.37866C46.7206 7.37866 42.0056 7.37866 37.1825 7.37866V0.0721256L30.6678 0.0361328V11.2659L25.0529 0.0361328H18.5382V7.34267H4.2851C2.34149 7.45065 0.181917 7.37866 0.0739387 10.618L0.00195312 10.582ZM18.3583 22.0637L3.06134 42.1117C3.06134 32.5376 3.02535 22.1357 3.02535 12.5616C3.02535 10.834 3.02535 10.69 5.00495 10.654H18.4663V20.696H24.981V11.2299L30.5958 20.696H37.1105V10.654C41.4657 10.654 45.7848 10.654 50.1399 10.654C52.6954 10.69 52.6954 10.726 52.6954 13.1375V42.2917L37.2185 22.0997H18.3223L18.3583 22.0637Z" fill="#3A6AB3"/>
+                    </svg>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-evenly w-100">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        О нас
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                        <li><a class="dropdown-item" href="#">История</a></li>
+                                        <li><a class="dropdown-item" href="#">егодня</a></li>
+                                        <li><a class="dropdown-item" href="#">Перспективы развития </a></li>
+                                        <li><a class="dropdown-item" href="#">Паспорт предприятия</a></li>
+                                        <li>
+                                            <div class="btn-group dropend">
+                                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Инвестиционная деятельность
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Внешняя задолженность</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">егодня</a></li>
+                                        <li><a class="dropdown-item" href="#">егодня</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Корпоративное управление
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                        <li><a class="dropdown-item" href="#">История</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        продукция
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Партнеры
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        пресс-центр
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ESG
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Устойчивость
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Контакты
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Интерактивные услуги
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Миссия</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </header>
-
         <!-- Navbar end -->
+        <!-- Main content start -->
+        <section class="main">
+            <video src="./video/bg-video.mp4" autoplay muted loop></video>
+            <div class="main-container">
+                <div class="main-content">
+                    <p>Акционерное общество “Навоиазот”</p>
+                    <h1>Ведущий производитель широкого ассортимента продукции</h1>
+                    <div class="btn">Подробнее</div>
+                </div>
+            </div>
+            <div class="main-mini-text">
+                <span class="hl"></span>
+                АО "Навоиазот" лидер химической промышленности, внедряющий передовые экологические
+                технологии и обеспечивающий устойчивое развитие в Центральной Азии
+            </div>
+        </section>
+        <!-- Main content end -->
+        <!-- about start -->
+        <section class="about-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 about-img d-flex justify-content-between">
+                        <img class="d-inline-block h-100" src="./image/about-bg.png" alt="navoiyazot work">
+                        <img class="d-inline-block h-100" src="./image/about-bg-2.png" alt="navoiyazot work">
+                    </div>
+                    <div class="col-6 about-text">
+                        <p>О нас</p>
+                        <h1>Акционерное общество “Навоиазот”</h1>
+                        <p>
+                            Миссия АО «Navoiyazot» заключается в производстве высококачественной химической продукции,
+                            способствующей устойчивому развитию экономики и повышению благосостояния общества, через
+                            внедрение инновационных технологий, соблюдение высоких стандартов экологической
+                            безопасности и построение долгосрочных партнерских отношений.
+                        </p>
+                        <ul>
+                            <li>Многолетний опыт на рынке химической продукции, подтвержденный репутацией и доверием клиентов.</li>
+                            <li>Высокое качество: Строгий контроль качества на всех этапах производства, в соответствии международным стандартам.</li>
+                            <li>Технологические инновации: Использование передовых экологических технологий и улучшение производственного процесса.</li>
+                            <li>Надежное партнерство: Доверительные и долгосрочные отношения с партнерами по всему миру.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="hl"></span>
+                    Крупнейший Ведущий производитель химической продукции Республики Узбекистан Акционерное общество
+                    Navoiyazot являющееся одним из базовых сегментов акционерного общества АО O`zkimyosanoat АО
+                    Navoiyazot предлагает широкий ассортимент химической продукции, минеральные удобрения, продукция
+                    промышленной химии, кислоты, реагенты для горнодобывающей промышленности,технические газы, смолы
+                    и полимеры – наши продукты соответствуют международным стандартам и находят применение в
+                    различных отраслях промышленности.
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+        <!-- product start -->
+        <section class="product-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 product-control">
+                        <h1>Продукты</h1>
+                        <p>Мы предоставляем вам лучшие продукты</p>
+                        <button class="btn bg-brand-color">Посмотреть все</button>
+                        <div>
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="prev()">
+                                <rect y="0.5" width="44" height="44" rx="22" fill="#D1D1D1"/>
+                                <g clip-path="url(#clip0_48_254)">
+                                    <path d="M25.7682 15.0398C25.2352 14.5163 24.3741 14.5163 23.8411 15.0398L17.5677 21.2009C17.0347 21.7244 17.0347 22.57 17.5677 23.0935L23.8411 29.2546C24.3741 29.7781 25.2352 29.7781 25.7682 29.2546C26.3012 28.7311 26.3012 27.8855 25.7682 27.362L20.4652 22.1405L25.7682 16.9325C26.3012 16.409 26.2876 15.5499 25.7682 15.0398Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_48_254">
+                                        <rect width="24" height="24" fill="white" transform="translate(10 10.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="next()">
+                                <rect y="0.5" width="44" height="44" rx="22" fill="#0B3E83"/>
+                                <g clip-path="url(#clip0_48_258)">
+                                    <path d="M18.2318 15.0398C18.7648 14.5163 19.6259 14.5163 20.1589 15.0398L26.4323 21.2009C26.9653 21.7244 26.9653 22.57 26.4323 23.0935L20.1589 29.2546C19.6259 29.7781 18.7648 29.7781 18.2318 29.2546C17.6988 28.7311 17.6988 27.8855 18.2318 27.362L23.5348 22.1405L18.2318 16.9325C17.6988 16.409 17.7124 15.5499 18.2318 15.0398Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_48_258">
+                                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 34 10.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-10 product-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <div class="slide">
+                                    <img src="./image/product-bg.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg2.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg2.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg2.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./image/product-bg2.png" alt="navoiyazot product">
+                                    <div>
+                                        <p>Минеральные удобрения</p>
+                                        <span>Подробнее
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5756 7.98877L7.87864 14.9263L7.21197 14.2388L12.818 8.45752H1.15137V7.52002H12.818L7.21197 1.73877L7.87864 1.08252L14.5756 7.98877Z" fill="#575A7B"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product end -->
+        <!-- company information start -->
+        <section class="company-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>О компании</h2>
+                        <button class="btn bg-brand-color">Миссия</button>
+                        <button class="btn">История развития</button>
+                        <button class="btn">Почему Мы?</button>
+                        <p>Сегодня АО .Navoiyazot. - это современное предприятие химической промышленности ,
+                            являющееся одним из лидеров в Узбекистане и Центральной Азии. Предприятие АО
+                            .Navoiyazot. производит широкий ассортимент химической продукции, которая находит
+                            применение в различных отраслях экономики, таких как сельское хозяйство,
+                            промышленность, медицина и другие.</p>
+                        <div class="company-box-container">
+                            <div>
+                                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6836 28.8165V36.8111C33.6819 37.2956 33.4887 37.7598 33.1461 38.1024C32.8035 38.445 32.3392 38.6382 31.8547 38.6399H30.3425V47.9528C30.3418 48.3436 30.1859 48.7182 29.9092 48.9942C29.6326 49.2702 29.2576 49.4252 28.8668 49.425H25.1297C24.7394 49.4245 24.3653 49.2692 24.0893 48.9932C23.8133 48.7172 23.658 48.3431 23.6575 47.9528V38.6399H22.1453C21.6603 38.6389 21.1954 38.446 20.8521 38.1033C20.5089 37.7606 20.3152 37.2961 20.3134 36.8111V28.8165C20.3152 28.3315 20.5089 27.867 20.8521 27.5243C21.1954 27.1817 21.6603 26.9887 22.1453 26.9877H24.6343C24.6343 27.0185 24.6374 27.0492 24.6405 27.08L24.8956 29.1547C24.9268 29.4225 25.0482 29.6716 25.2398 29.8613L24.8341 35.2494C24.8255 35.357 24.8403 35.4651 24.8775 35.5664C24.9146 35.6678 24.9732 35.7599 25.0492 35.8364L26.4693 37.2841C26.6124 37.4246 26.8054 37.5025 27.006 37.5008C27.2065 37.499 27.3981 37.4178 27.5388 37.2749L28.9195 35.8673C29.0049 35.79 29.0715 35.6941 29.1141 35.587C29.1567 35.4799 29.1743 35.3645 29.1655 35.2496L28.7597 29.8615C28.9514 29.6719 29.0728 29.4227 29.104 29.1549L29.3591 27.0802C29.3622 27.0494 29.3652 27.0187 29.3652 26.9879H31.8543C32.3389 26.9895 32.8031 27.1826 33.1458 27.5252C33.4885 27.8678 33.6818 28.332 33.6836 28.8165ZM26.1562 26.9877L26.3837 28.8165C26.4333 28.8268 26.4838 28.832 26.5344 28.8319H27.4656C27.5162 28.832 27.5667 28.8268 27.6163 28.8165L27.8406 26.9877H26.1562ZM26.7249 30.3503L26.3714 35.0225L26.9984 35.6649L27.6286 35.0225L27.2751 30.3503H26.7249ZM26.9984 25.1836C27.7556 25.1839 28.496 24.9596 29.1257 24.5392C29.7555 24.1187 30.2465 23.521 30.5365 22.8215C30.8266 22.122 30.9027 21.3523 30.7552 20.6095C30.6078 19.8668 30.2434 19.1845 29.7081 18.6488C29.1729 18.1132 28.4908 17.7483 27.7482 17.6004C27.0056 17.4524 26.2357 17.5279 25.5361 17.8175C24.8364 18.107 24.2383 18.5976 23.8174 19.227C23.3965 19.8565 23.1717 20.5967 23.1715 21.3539C23.1717 22.3691 23.5748 23.3426 24.2924 24.0607C25.01 24.7788 25.9833 25.1827 26.9984 25.1836ZM52.6289 21.4552H45.3694C45.0068 21.4561 44.6593 21.6006 44.403 21.857C44.1467 22.1134 44.0023 22.4609 44.0016 22.8235V28.8016C44.0024 29.1641 44.1468 29.5115 44.4031 29.7678C44.6595 30.0241 45.0069 30.1685 45.3694 30.1694H46.5004V37.1311C46.5007 37.4236 46.6171 37.7041 46.8239 37.911C47.0308 38.1179 47.3113 38.2342 47.6038 38.2345H50.3977C50.6898 38.2336 50.9696 38.1169 51.1758 37.9101C51.3821 37.7033 51.498 37.4231 51.4981 37.1311V30.169H52.6289C52.9918 30.1683 53.3397 30.0241 53.5966 29.7678C53.8535 29.5115 53.9985 29.164 54 28.8011V22.8235C53.9986 22.4605 53.8536 22.1129 53.5967 21.8565C53.3398 21.6001 52.9919 21.4559 52.6289 21.4552ZM41.5209 11.6506H34.2614C33.8989 11.6514 33.5515 11.7958 33.2952 12.0521C33.0389 12.3084 32.8945 12.6558 32.8936 13.0183V18.9933C32.8942 19.3562 33.0384 19.704 33.2947 19.9609C33.551 20.2178 33.8985 20.3629 34.2614 20.3644H35.3925V27.3261C35.3926 27.6181 35.5084 27.8983 35.7147 28.1051C35.9209 28.3119 36.2007 28.4285 36.4928 28.4295H39.2897C39.5818 28.4285 39.8616 28.3119 40.0679 28.1051C40.2741 27.8983 40.39 27.6181 40.3901 27.3261V20.3642H41.5213C41.8841 20.3626 42.2316 20.2176 42.4879 19.9607C42.7441 19.7038 42.8883 19.3559 42.889 18.9931V13.0183C42.8881 12.6558 42.7437 12.3084 42.4874 12.0521C42.2311 11.7958 41.8837 11.6514 41.5213 11.6506H41.5209ZM37.8913 10.3012C38.4576 10.3015 39.0112 10.1338 39.4822 9.81949C39.9532 9.50514 40.3204 9.05818 40.5374 8.53514C40.7543 8.01209 40.8113 7.43646 40.7011 6.88102C40.591 6.32559 40.3185 5.8153 39.9183 5.41469C39.5181 5.01408 39.0081 4.74113 38.4528 4.63038C37.8975 4.51962 37.3218 4.57602 36.7985 4.79245C36.2753 5.00887 35.8279 5.37561 35.5131 5.84627C35.1982 6.31694 35.03 6.87039 35.0298 7.43665C35.0295 7.81264 35.1034 8.18499 35.2471 8.53244C35.3908 8.87989 35.6015 9.19563 35.8672 9.46163C36.1329 9.72763 36.4485 9.93869 36.7958 10.0827C37.1431 10.2268 37.5153 10.301 37.8913 10.3012ZM8.63061 21.4552H1.37109C1.00815 21.4559 0.660204 21.6001 0.403295 21.8565C0.146385 22.1129 0.00139293 22.4605 0 22.8235L0 28.8016C0.00150411 29.1644 0.146545 29.512 0.403443 29.7683C0.660341 30.0245 1.00822 30.1687 1.37109 30.1694H2.49961V37.1311C2.50042 37.4235 2.61693 37.7036 2.82368 37.9104C3.03044 38.1172 3.31063 38.2337 3.60302 38.2345H6.39689C6.68945 38.2342 6.96994 38.1179 7.17681 37.911C7.38368 37.7041 7.50003 37.4236 7.5003 37.1311V30.169H8.63061C8.99312 30.1681 9.34053 30.0237 9.59686 29.7674C9.85319 29.5111 9.99757 29.1636 9.99844 28.8011V22.8235C9.99769 22.4609 9.85335 22.1134 9.59701 21.857C9.34066 21.6006 8.99319 21.4561 8.63061 21.4552ZM21.1064 18.9933V13.0183C21.1055 12.6558 20.9611 12.3084 20.7048 12.0521C20.4485 11.7958 20.1011 11.6514 19.7386 11.6506H12.4787C12.1163 11.6514 11.7689 11.7958 11.5126 12.0521C11.2563 12.3084 11.1119 12.6558 11.111 13.0183V18.9933C11.1117 19.3561 11.2559 19.704 11.5121 19.9609C11.7684 20.2178 12.1159 20.3628 12.4787 20.3644H13.6099V27.3261C13.61 27.6181 13.7259 27.8983 13.9321 28.1051C14.1384 28.3119 14.4182 28.4285 14.7103 28.4295H17.5041C17.7967 28.4292 18.0772 28.3128 18.284 28.106C18.4909 27.8991 18.6073 27.6186 18.6075 27.3261V20.3642H19.7386C20.1014 20.3627 20.4489 20.2177 20.7052 19.9608C20.9615 19.7039 21.1057 19.3561 21.1064 18.9933ZM16.1087 10.3012C16.6749 10.3014 17.2285 10.1338 17.6995 9.81939C18.1704 9.50501 18.5376 9.05804 18.7545 8.53499C18.9715 8.01194 19.0284 7.43632 18.9182 6.88089C18.808 6.32547 18.5356 5.8152 18.1354 5.41461C17.7352 5.01402 17.2252 4.7411 16.6699 4.63036C16.1145 4.51962 15.5389 4.57603 15.0156 4.79247C14.4923 5.0089 14.045 5.37564 13.7302 5.8463C13.4154 6.31696 13.2472 6.8704 13.2469 7.43665C13.2467 7.81266 13.3205 8.18503 13.4642 8.53249C13.6079 8.87995 13.8187 9.1957 14.0844 9.46171C14.3502 9.72771 14.6657 9.93876 15.013 10.0828C15.3604 10.2268 15.7327 10.301 16.1087 10.3012ZM5.0007 20.106C5.56695 20.1057 6.12039 19.9375 6.59105 19.6227C7.06171 19.3078 7.42845 18.8605 7.64488 18.3373C7.86131 17.814 7.91773 17.2383 7.80699 16.683C7.69625 16.1277 7.42332 15.6177 7.02273 15.2175C6.62214 14.8173 6.11188 14.5448 5.55645 14.4346C5.00103 14.3244 4.4254 14.3814 3.90236 14.5983C3.37931 14.8152 2.93234 15.1824 2.61796 15.6534C2.30358 16.1243 2.13591 16.6779 2.13616 17.2442C2.13622 17.6202 2.21037 17.9926 2.35438 18.3399C2.49839 18.6873 2.70943 19.0029 2.97546 19.2686C3.24148 19.5344 3.55726 19.7451 3.90476 19.8888C4.25226 20.0325 4.62466 20.1063 5.0007 20.106ZM48.9993 20.106C49.5657 20.1063 50.1194 19.9386 50.5905 19.6241C51.0615 19.3096 51.4287 18.8625 51.6456 18.3393C51.8625 17.8161 51.9193 17.2403 51.8089 16.6848C51.6985 16.1293 51.4258 15.619 51.0253 15.2185C50.6249 14.818 50.1146 14.5453 49.5591 14.4348C49.0036 14.3244 48.4278 14.3812 47.9046 14.598C47.3814 14.8149 46.9342 15.182 46.6197 15.6531C46.3052 16.1241 46.1375 16.6778 46.1377 17.2442C46.1375 17.62 46.2114 17.9923 46.3551 18.3395C46.4989 18.6868 46.7096 19.0024 46.9754 19.2682C47.2411 19.534 47.5567 19.7447 47.904 19.8885C48.2512 20.0323 48.6234 20.1062 48.9993 20.106Z" fill="url(#paint0_linear_365_232)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_365_232" x1="0" y1="27.0001" x2="54" y2="27.0001" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="white"/>
+                                            <stop offset="1" stop-color="#FE7C00"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>8501</p>
+                                <p>Сотрудники</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+        </section>
+        <!-- company information end -->
     </div>
-    <script>
-        document.querySelectorAll('.dropdown-toggle').forEach(hover =>
-            hover.addEventListener('mouseover', () => hover.click()));
-    </script>
+<!--    <script>-->
+<!--        const dropdowns = document.querySelectorAll('.dropdown');-->
+<!--        dropdowns.forEach(dropdown => {-->
+<!--            dropdown.getElementsByClassName('dropdown-toggle')[0].addEventListener('mouseover', () => {-->
+<!--                dropdown.getElementsByClassName('dropdown-toggle')[0].click();-->
+<!--                console.log('hovered');-->
+<!--            });-->
+<!--            dropdown.addEventListener('mouseout', () => {-->
+<!--                dropdown.getElementsByClassName('dropdown-toggle')[0].click();-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+    <script src="./script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
