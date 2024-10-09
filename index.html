@@ -557,6 +557,48 @@
             </div>
         </section>
         <!-- Brand end -->
+        <!-- Comments start-->
+        <div class="comments-main">
+            <div class="container">
+                <p>Отзывы клиентов</p>
+                <h1 class="container">Наши клиенты о нас</h1>
+            </div>
+            <div class="swiper comments-slider" id="comments-slider">
+                <div class="swiper brand-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/brand.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand2.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand3.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand4.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand5.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand2.png" alt="navoiyazot brands">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/brand3.png" alt="navoiyazot brands">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Comments end-->
     </div>
 <!--    <script>-->
 <!--        const dropdowns = document.querySelectorAll('.dropdown');-->
@@ -600,6 +642,31 @@
             }
         });
         swiper.mount();
+
+        const swiper2 = new Swiper(".brand-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+        swiper2.mount();
     </script>
 </body>
 
