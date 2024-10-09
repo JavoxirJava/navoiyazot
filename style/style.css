@@ -53,6 +53,69 @@
     background-color: var(--brand-color2);
 }
 
+
+/* Slider start */
+.slider-container {
+    width: 100%; /* Ekranning 100% kengligi */
+    overflow: hidden; /* Elementlar chekkasini yashirish */
+    user-select: none; /* Text tanlanishining oldini olish */
+}
+
+/* Slayderdagi barcha elementlar */
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Silliq harakat */
+    cursor: grab;
+}
+
+/* Har bir slayd */
+.slide {
+    min-width: 31%; /* 4 ta slayd ekranga sigishi uchun TODO min ni olish kerak*/
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    /*border: 1px solid #ccc;*/
+    position: relative;
+
+    flex: 0 0 25%;
+    box-sizing: border-box;
+}
+
+/* Slider end */
+
+/* Slider start */
+.swiper {
+    width: 100%;
+    height: 66% !important;
+}
+
+.swiper-wrapper {
+    height: 100% !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 40px;
+    background-color: var(--bg-color);
+}
+
+.slider-container:active .slider-wrapper {
+    cursor: grabbing;
+}
+/* Slider end */
+
 /* Header start */
 
 .header {
@@ -537,25 +600,18 @@
 
 /* Company information end */
 
-/* Slider start */
-.slider-container {
-    width: 100%; /* Ekranning 100% kengligi */
-    overflow: hidden; /* Elementlar chekkasini yashirish */
+/* Brand start */
+.brand-main {
+    margin-top: 80px;
+    height: 280px;
+    background-color: var(--bg-color);
 }
 
-/* Slayderdagi barcha elementlar */
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Silliq harakat */
+.brand-main h1 {
+    font-family: var(--montserrat), sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 20px;
 }
 
-/* Har bir slayd */
-.slide {
-    min-width: 31%; /* 4 ta slayd ekranga sigishi uchun TODO min ni olish kerak*/
-    padding: 20px;
-    text-align: center;
-    background-color: #f2f2f2;
-    /*border: 1px solid #ccc;*/
-    position: relative;
-}
-/* Slider end */
+/* Brand end */

@@ -30,3 +30,41 @@ function next() {
     sliderWrapper.style.transform = `translateX(${translateX}%)`;
 }
 
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let startX;
+
+sliderWrapper.addEventListener('mousedown', dragStart);
+sliderWrapper.addEventListener('mouseup', dragEnd);
+sliderWrapper.addEventListener('mouseleave', dragEnd);
+sliderWrapper.addEventListener('mousemove', dragAction);
+
+sliderWrapper.addEventListener('touchstart', dragStart);
+sliderWrapper.addEventListener('touchend', dragEnd);
+sliderWrapper.addEventListener('touchmove', dragAction);
+
+function dragStart(e) {
+    e.preventDefault();  // Text belgilanmasligi uchun
+    isDragging = true;
+    startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    startPos = currentTranslate;
+    sliderWrapper.style.cursor = 'grabbing';
+}
+
+function dragAction(e) {
+    if (!isDragging) return;
+    const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    const moveX = currentX - startX;
+    currentTranslate = prevTranslate + moveX;
+    sliderWrapper.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function dragEnd() {
+    isDragging = false;
+    prevTranslate = currentTranslate;
+    sliderWrapper.style.cursor = 'grab';
+}
+
+// splide
