@@ -28,15 +28,16 @@
 }
 
 .vl {
-    width: 1px;
-    height: 100%;
+    width: 1px !important;
+    height: 100% !important;
     background-color: #FE9E42;
-    margin: 0 35px;
+    margin: 0 35px !important;
+    padding: 0!important;
 }
 
 .hl {
-    width: 40px;
-    height: 2px;
+    width: 40px !important;
+    height: 2px !important;
     background-color: white;
     display: inline-block;
 }
@@ -125,6 +126,8 @@
     height: 90px;
     background-color: var(--brand-color);
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header_container {
