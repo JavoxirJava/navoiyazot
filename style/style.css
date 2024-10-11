@@ -53,7 +53,7 @@
 .hl {
     width: 40px !important;
     height: 2px !important;
-    background-color: white;
+    background-color: var(--bg-white);
     display: inline-block;
 }
 
@@ -178,7 +178,7 @@
 }
 
 .header_contact>div>div>p>a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -218,7 +218,7 @@
 .navbar-main {
     width: 100%;
     height: 110px;
-    background-color: white;
+    background-color: var(--bg-white);
     display: flex;
 }
 
@@ -262,7 +262,7 @@
 }
 
 .main-content {
-    color: white;
+    color: var(--color-white);
     position: absolute;
     width: 800px;
     left: 300px;
@@ -286,7 +286,7 @@
 
 .main-content .btn {
     background-color: var(--brand-color);
-    color: white;
+    color: var(--color-white);
     font-size: 18px;
     font-family: var(--montserrat), sans-serif;
     margin: 10px 30px !important;
@@ -304,7 +304,7 @@
     font-weight: 500;
     font-size: 18px;
     text-indent: -30px;
-    color: white;
+    color: var(--color-white);
     padding: 2.1% 4.5% 2.5% 3%;
     text-align: start;
 }
@@ -376,7 +376,7 @@
     font-size: 18px;
     text-indent: -20px;
     background-color: var(--brand-color2);
-    color: white;
+    color: var(--color-white);
     margin-top: 40px;
     border-radius: 12px;
     padding: 2.2% 4.5% 2.2% 3%;
@@ -421,7 +421,7 @@
 }
 
 .product-main .product-control .btn {
-    color: white;
+    color: var(--color-white);
     font-size: 18px;
     font-family: var(--montserrat), sans-serif;
     padding: 8px 25px !important;
@@ -461,7 +461,7 @@
     height: 91px;
     position: absolute;
     bottom: 0;
-    background-color: white;
+    background-color: var(--bg-white);
     border-radius: 10px;
 }
 
@@ -511,7 +511,7 @@
 
 .company-content button:hover {
     background-color: var(--brand-color);
-    color: white;
+    color: var(--color-white);
 }
 
 .company-content>p {
@@ -534,7 +534,7 @@
     width: 217px;
     height: 123px;
     background-color: var(--brand-color2);
-    color: white;
+    color: var(--color-white);
     border-radius: 12px;
     padding: 10px 20px;
 }
@@ -557,7 +557,7 @@
 
 .show {
     background-color: var(--brand-color) !important;
-    color: white !important;
+    color: var(--color-white) !important;
     border-color: var(--brand-color) !important;
 }
 
@@ -761,9 +761,78 @@
     font-weight: 400;
     color: #575A7B;
 }
-
-
-
-
-
 /* Leaders end */
+/* Connect start */
+.connect-main {
+    height: 430px;
+    position: relative;
+}
+
+.connect-main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.connect-main>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 31, 43, 0.5);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.connect-main .row {
+    height: 258px;
+}
+
+.connect-main .row>div:first-child h2 {
+    font-family: var(--montserrat), sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.connect-main .row>div:first-child button {
+    background-color: var(--brand-color);
+    color: var(--color-white);
+    padding: 7px 17px;
+    font-family: var(--montserrat), sans-serif;
+    font-size: var(--fs-18);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.connect-main .row>div:first-child button:hover {
+    background-color: rgba(0 0 0 / 0);
+    color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
+.connect-main .connect-content>div {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--brand-color2);
+    display: flex;
+    color: var(--color-white);
+    align-items: center;
+    margin: 20px 0;
+}
+
+.connect-main .connect-content>div svg {
+    margin: 0 15px;
+}
+
+.connect-main .connect-content>div span {
+    font-family: var(--intel), sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    padding: 17px 0;
+}
+
+/* Connect end */
