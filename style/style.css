@@ -889,5 +889,34 @@
 .new-box .row>div {
     width: 57%;
 }
-
 /* News end */
+/* Contact Us start */
+.contact-us-main {
+    height: 150px;
+    background-color: var(--brand-color);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-main button {
+    background-color: var(--bg-white);
+    color: var(--brand-color);
+    padding: 7px 17px;
+    font-family: var(--montserrat), sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 500;
+}
+
+.contact-us-main button:hover {
+    background-color: var(--brand-color);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+.contact-us-main h2 {
+    font-family: var(--montserrat), sans-serif;
+    font-size: var(--fs-24);
+    font-weight: 500;
+}
+/* Contact Us end */
