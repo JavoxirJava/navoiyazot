@@ -642,7 +642,8 @@
 
 
 .comments-main .container p,
-.leaders-main .container p {
+.leaders-main .container p,
+.news-main .container>p {
     font-family: var(--dm-sans), sans-serif;
     color: var(--brand-color);
     font-weight: 700;
@@ -650,7 +651,8 @@
 }
 
 .comments-main .container h1,
-.leaders-main .container h1 {
+.leaders-main .container h1,
+.news-main .container>h1 {
     font-family: var(--montserrat), sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -719,7 +721,8 @@
     padding: 0 8px!important;
 }
 
-.leaders-main .container>button {
+.leaders-main .container>button,
+.news-main .container>button {
     background-color: var(--brand-color);
     color: var(--color-white);
     float: right;
@@ -834,5 +837,57 @@
     font-weight: 400;
     padding: 17px 0;
 }
-
 /* Connect end */
+/* News start */
+.news-main .row {
+    margin: 0;
+}
+
+.news-main .row>* {
+    padding: 0;
+}
+
+.news-main .new-box h2 {
+    font-family: var(--montserrat), sans-serif;
+    font-size: var(--fs-24);
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.news-main .new-box h2:first-letter {
+    text-transform: uppercase;
+}
+
+.news-main .new-box p {
+    font-family: var(--intel), sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+}
+
+.news-main .new-box p:nth-child(2) {
+    font-size: var(--fs-14);
+}
+
+.news-main .new-box a {
+    font-family: var(--intel), sans-serif;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    color: var(--brand-color);
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+}
+
+.new-box {
+    margin-bottom: 50px;
+}
+
+.new-box .row>img {
+    width: 43%;
+}
+
+.new-box .row>div {
+    width: 57%;
+}
+
+/* News end */
