@@ -1,0 +1,245 @@
+@media screen and (max-width: 1400px) {
+    .navbar-main nav {
+        margin-left: 10px;
+    }
+    .company-content button {
+        font-size: var(--fs-16);
+        font-weight: 400;
+        padding: 8px 16px !important;
+        margin: 10px 10px 20px 0;
+    }
+
+    .gallery-main .row div {
+        width: 40%;
+    }
+
+    .gallery-main .row div:nth-child(4),
+    .gallery-main .row div:nth-child(6) {
+        width: 35%;
+    }
+
+    .gallery-main .row div:nth-child(5) {
+        width: 63%;
+    }
+
+    .gallery-main .row div:nth-child(7) {
+        width: 34%;
+    }
+
+    .gallery-main .row div:nth-child(8) {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* Header start */
+    .header_contact>.col-1,
+    .header_contact_2>.col-1 {
+        margin: 0 10px!important;
+    }
+
+    .header_contact>div:first-child {
+        width: 27%;
+    }
+
+    .header_contact>div:nth-child(3) {
+        width: 40%;
+    }
+    /* Header end */
+    /* Main start */
+    .main-content {
+        width: 70%;
+    }
+
+    .main-content h1 {
+        font-size: calc(var(--fs-30) + var(--fs-16));
+    }
+
+    .main-mini-text {
+        width: 650px;
+        height: 140px;
+        top: 92%;
+        left: 35%;
+        font-size: calc(var(--fs-16) + 1px);
+    }
+    /* Main end */
+    /* About start */
+    .about-main {
+        padding-top: 140px;
+        height: 1000px;
+    }
+
+    .about-main .about-text {
+        padding-left: 0;
+    }
+
+    .about-main .about-text h1 {
+        margin-bottom: 10px;
+        font-size: var(--fs-28);
+        font-weight: 600;
+    }
+
+    .about-main .about-text p:last-child {
+        font-size: var(--fs-16);
+    }
+
+    .about-main .about-text li {
+        font-size: var(--fs-16);
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .about-main .about-content {
+        height: 190px;
+        font-size: var(--fs-16);
+        margin-top: 20px;
+        padding: 2% 3% 1.8% 3%;
+    }
+    /* About end */
+    /* Products start */
+    .slide {
+        flex: 0 0 50%;
+    }
+
+    .product-main .product-slider .slide>div {
+        width: 260px;
+        height: 91px;
+        left: 15px;
+    }
+
+    .product-main .product-slider .slide>div>p {
+        font-size: var(--fs-16);
+        font-weight: 600;
+    }
+    /* Products end */
+    /* Company information start */
+    .company-info {
+        height: 550px;
+        padding: 50px 0;
+    }
+
+    .company-content h2 {
+        font-family: var(--montserrat), sans-serif;
+        font-size: var(--fs-30);
+        font-weight: 600;
+    }
+
+    .company-content>p {
+        font-size: var(--fs-16);
+    }
+    /* Company information end */
+    /* Gallery start */
+    .gallery-main .row div {
+        width: 40% !important;
+    }
+
+    .gallery-main .row div:nth-child(2),
+    .gallery-main .row div:nth-child(3) {
+        width: 28.5%!important;
+    }
+
+    .gallery-main .row div:nth-child(4),
+    .gallery-main .row div:nth-child(6) {
+        width: 34.5% !important;
+    }
+
+    .gallery-main .row div:nth-child(5) {
+        width: 64% !important;
+    }
+
+    .gallery-main .row div:nth-child(7),
+    .gallery-main .row div:nth-child(8) {
+        width: 31.5%!important;
+    }
+    /* Gallery end */
+    /* Comments start */
+    .comments-main {
+        margin-top: 50px;
+        height: 484px; /* TODO o'chirish kerakdur */
+    }
+
+    .comments-main .container h1,
+    .leaders-main .container h1,
+    .news-main .container>h1 {
+        font-family: var(--montserrat), sans-serif;
+        font-size: var(--fs-28);
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .comments-main .swiper-slide {
+        flex-direction: column;
+        padding: 0 20px;
+        min-height: 420px;
+    }
+
+    .comments-main .swiper-slide img {
+        width: 25%;
+        padding: 10px 0 0;
+    }
+    /* Comments end */
+    /* Leaders start */
+    .leaders-main {
+        margin-top: 170px;
+    }
+    /* Leaders end */
+    /* Connect start */
+    .connect-main .row>div:first-child h2 {
+         font-size: calc(var(--fs-32) + var(--fs-16));
+         font-weight: 600;
+     }
+    /* Connect end */
+    /* News start */
+    .news-main>.container{
+        margin-top: 0!important;
+    }
+
+    .new-box .row {
+        justify-content: center;
+    }
+
+    .new-box .row>img {
+        width: 95%;
+        height: 250px;
+    }
+
+    .new-box .row>div {
+        width: 100%;
+        padding-left: 0!important;
+    }
+
+    .new-box .row>div>.mt-1 {
+        margin-bottom: 25px;
+    }
+    /* News end */
+    /* Contact us start */
+    .contact-us-main {
+        height: 100px;
+        align-items: center;
+    }
+
+    .contact-us-main h2 {
+        margin-top: 5px;
+        font-size: var(--fs-20);
+        font-weight: 500;
+    }
+    /* Contact us end */
+
+    /* Footer start */
+    .footer-contact-2 {
+        position: relative;
+        top: 0;
+    }
+    .footer-contact-2>div:nth-child(3) svg {
+        position: relative;
+        top: 25px;
+        width: 15%;
+    }
+
+    .footer-contact-2>div:nth-child(3) p {
+        width: 50%;
+    }
+    .footer-contact-2>div:nth-child(3) p:last-child {
+        margin-left: 50px;
+    }
+}

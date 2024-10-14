@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./image/icon/icon.png">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
     <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
@@ -16,7 +17,7 @@
         <!-- Header start -->
         <header class="header">
             <div class="header_container row">
-                <div class="col-8">
+                <div class="col-lg-11 col-xl-8">
                     <div class="row header_contact">
                         <div class="col-3 d-flex">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,9 +56,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="row header_contact_2 justify-content-end">
-                        <div class="col-1">
+                <div class="col-lg-1 col-xl-4">
+                    <div class="row header_contact_2 justify-content-lg-start justify-content-end">
+                        <div class="col-lg-3 col-xxl-1">
                             <div class="dropdown">
                                 <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Ру
@@ -69,8 +70,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="vl col-1"></div>
-                        <div class="col-3">
+                        <div class="vl col-1 d-none d-xl-flex"></div>
+                        <div class="col-3 d-none d-xl-flex">
                             <a href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_48_173)">
                                     <path d="M11.3258 3.41767C14.1229 3.41767 14.454 3.42814 15.5592 3.47843C16.5807 3.52557 17.1348 3.69633 17.5047 3.83986C17.9604 4.00748 18.3721 4.27462 18.7105 4.62348C19.0583 4.96186 19.3265 5.37357 19.4941 5.82929C19.6376 6.19805 19.8084 6.75328 19.8555 7.77471C19.9048 8.87995 19.9163 9.20995 19.9163 12.0071C19.9163 14.8053 19.9058 15.1363 19.8555 16.2416C19.8084 17.263 19.6376 17.8172 19.4941 18.187C19.3197 18.6386 19.0529 19.0488 18.7106 19.3913C18.3684 19.7337 17.9583 20.0008 17.5068 20.1754C17.138 20.3189 16.5838 20.4897 15.5624 20.5358C14.4571 20.586 14.1261 20.5965 11.3289 20.5965C8.5318 20.5965 8.19971 20.586 7.09551 20.5358C6.07409 20.4886 5.51885 20.3189 5.15009 20.1754C4.69448 20.0074 4.28241 19.7392 3.94428 19.3907C3.59588 19.0529 3.32774 18.6412 3.15961 18.186C3.01609 17.8161 2.84532 17.2609 2.79923 16.2395C2.74894 15.1353 2.73847 14.8042 2.73847 12.0071C2.73847 9.2089 2.74894 8.87786 2.79923 7.77262C2.84637 6.75119 3.01609 6.197 3.15961 5.82719C3.32723 5.37252 3.59542 4.95976 3.94428 4.62243C4.2821 4.27404 4.69381 4.00589 5.14904 3.83776C5.51885 3.69424 6.07409 3.52348 7.09551 3.47738C8.19971 3.42709 8.53075 3.41557 11.3279 3.41557L11.3258 3.41767ZM11.3279 1.52881C8.48256 1.52881 8.12532 1.54033 7.00751 1.59167C5.89075 1.643 5.12913 1.82214 4.4639 2.07986C3.76464 2.34322 3.13115 2.75578 2.60751 3.28881C2.07486 3.81255 1.66267 4.44603 1.39961 5.14519C1.14085 5.81043 0.9638 6.57309 0.912467 7.68776C0.862181 8.80243 0.849609 9.16071 0.849609 12.006C0.849609 14.8514 0.862181 15.2086 0.912467 16.3254C0.964847 17.4432 1.14085 18.2027 1.39961 18.868C1.66278 19.5668 2.07496 20.1999 2.60751 20.7233C3.13132 21.2576 3.76513 21.6693 4.4639 21.9322C5.12913 22.191 5.8918 22.368 7.00751 22.4194C8.12218 22.4697 8.48151 22.4822 11.3268 22.4822C14.1722 22.4822 14.5284 22.4707 15.6462 22.4194C16.7629 22.368 17.5214 22.191 18.1877 21.9322C18.8838 21.6632 19.516 21.2517 20.0437 20.724C20.5714 20.1963 20.983 19.5641 21.252 18.868C21.5108 18.2027 21.6878 17.44 21.7391 16.3254C21.7894 15.2097 21.802 14.8503 21.802 12.006C21.802 9.16071 21.7894 8.80348 21.7391 7.68567C21.6868 6.5689 21.5108 5.81043 21.252 5.14519C20.9891 4.44592 20.5769 3.8124 20.0441 3.28881C19.5204 2.75578 18.887 2.34322 18.1877 2.07986C17.5225 1.82109 16.7598 1.64405 15.6441 1.59376C14.5294 1.54243 14.1711 1.5309 11.3258 1.5309L11.3279 1.52881Z" fill="white"/>
@@ -92,8 +93,8 @@
                                 <path d="M6.86328 21H2.50391V6.98438H6.86328V21ZM4.66016 5.10938C3.30078 5.10938 2.17578 3.9375 2.17578 2.53125C2.17578 1.17188 3.30078 0.046875 4.66016 0.046875C6.06641 0.046875 7.19141 1.17188 7.19141 2.53125C7.19141 3.9375 6.06641 5.10938 4.66016 5.10938ZM23.1289 21H18.8164V14.2031C18.8164 12.5625 18.7695 10.5 16.5195 10.5C14.2695 10.5 13.9414 12.2344 13.9414 14.0625V21H9.58203V6.98438H13.7539V8.90625H13.8008C14.4102 7.82812 15.8164 6.65625 17.9258 6.65625C22.332 6.65625 23.1758 9.5625 23.1758 13.3125V21H23.1289Z" fill="white"/>
                             </svg></a>
                         </div>
-                        <div class="vl col-1"></div>
-                        <div class="col-5 justify-content-between p-0">
+                        <div class="vl col-1 d-none d-xxl-flex"></div>
+                        <div class="col-5 justify-content-between p-0 d-none d-xxl-flex">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.1758 22.25C6.52578 22.25 1.92578 17.65 1.92578 12C1.92578 6.35 6.52578 1.75 12.1758 1.75C17.8258 1.75 22.4258 6.35 22.4258 12C22.4258 17.65 17.8258 22.25 12.1758 22.25ZM12.1758 3.25C7.34578 3.25 3.42578 7.18 3.42578 12C3.42578 16.82 7.34578 20.75 12.1758 20.75C17.0058 20.75 20.9258 16.82 20.9258 12C20.9258 7.18 17.0058 3.25 12.1758 3.25Z" fill="white"/>
                                 <path d="M22.6762 23.2499C22.4862 23.2499 22.2962 23.1799 22.1462 23.0299L20.1462 21.0299C19.8562 20.7399 19.8562 20.2599 20.1462 19.9699C20.4362 19.6799 20.9162 19.6799 21.2062 19.9699L23.2062 21.9699C23.4962 22.2599 23.4962 22.7399 23.2062 23.0299C23.0562 23.1799 22.8662 23.2499 22.6762 23.2499Z" fill="white"/>
@@ -116,7 +117,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-evenly w-100">
+                        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-evenly w-100 flex-wrap">
                             <li class="nav-item">
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -288,7 +289,7 @@
         <section class="product-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-2 product-control">
+                    <div class="col-xxl-2 col-xl-4 col-4 product-control">
                         <h1>Продукты</h1>
                         <p>Мы предоставляем вам лучшие продукты</p>
                         <button class="btn bg-brand-color">Посмотреть все</button>
@@ -317,7 +318,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-10 product-slider">
+                    <div class="col-xxl-10 col-xl-8 col-8 product-slider">
                         <div class="slider-container">
                             <div class="slider-wrapper">
                                 <div class="slide">
@@ -419,7 +420,7 @@
         <section class="company-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 company-content">
+                    <div class="col-lg-7 col-xl-6 company-content">
                             <h2>О компании</h2>
                             <button class="btn show">Миссия</button>
                             <button class="btn">История развития</button>
@@ -498,7 +499,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="col-6 company-image"></div>
+                    <div class="col-lg-5 col-xl-6 company-image"></div>
                 </div>
             </div>
         </section>
@@ -640,7 +641,7 @@
                 <button class="btn">Посмотреть все</button>
                 <h1 class="container">Наши руководители</h1>
                 <div class="row">
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l1.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -649,7 +650,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l2.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -661,7 +662,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l3.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -670,7 +671,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l4.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -679,7 +680,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l5.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -688,7 +689,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l6.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -697,7 +698,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l7.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -706,7 +707,7 @@
                             <p class="text-center p-0">и.о. Председателя правления АО «Навоиазот»</p>
                         </div>
                     </div>
-                    <div class="card col-3 border-0">
+                    <div class="card col-xl-3 col-lg-4 border-0">
                         <div>
                             <img src="./image/leaders/l7.png" class="card-img-top" alt="navoiyazot">
                         </div>
@@ -891,7 +892,7 @@
                             <p><a href="tel:+998792292534">+998 (79) 229-25-34</a> <a href="tel:+998792292534">+998 (79) 229-25-34</a></p>
                         </div>
                         <div class="row  mt-4">
-                            <div class="col-6">
+                            <div class="col-xl-6 col-lg-12">
                                 <span class="d-block text-black-white">Э-почта:</span>
                                 <svg class="col" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17 21.7998H7C3.35 21.7998 1.25 19.6998 1.25 16.0498V9.0498C1.25 5.3998 3.35 3.2998 7 3.2998H17C20.65 3.2998 22.75 5.3998 22.75 9.0498V16.0498C22.75 19.6998 20.65 21.7998 17 21.7998ZM7 4.7998C4.14 4.7998 2.75 6.1898 2.75 9.0498V16.0498C2.75 18.9098 4.14 20.2998 7 20.2998H17C19.86 20.2998 21.25 18.9098 21.25 16.0498V9.0498C21.25 6.1898 19.86 4.7998 17 4.7998H7Z" fill="#FE7C00"/>
@@ -902,7 +903,7 @@
                                     <a href="mailto:sale@navoiyazot.uz">sale@navoiyazot.uz</a>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-lg-12">
                                 <span class="d-block text-black-white">Адрес:</span>
                                 <svg class="col" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.9999 14.7197C9.86988 14.7197 8.12988 12.9897 8.12988 10.8497C8.12988 8.70975 9.86988 6.98975 11.9999 6.98975C14.1299 6.98975 15.8699 8.71975 15.8699 10.8597C15.8699 12.9997 14.1299 14.7197 11.9999 14.7197ZM11.9999 8.48975C10.6999 8.48975 9.62988 9.54975 9.62988 10.8597C9.62988 12.1697 10.6899 13.2297 11.9999 13.2297C13.3099 13.2297 14.3699 12.1697 14.3699 10.8597C14.3699 9.54975 13.2999 8.48975 11.9999 8.48975Z" fill="#FE7C00"/>
@@ -927,6 +928,7 @@
         </footer>
         <!-- Footer end -->
     </div>
+
 <!--    <script>-->
 <!--        const dropdowns = document.querySelectorAll('.dropdown');-->
 <!--        dropdowns.forEach(dropdown => {-->
@@ -996,5 +998,4 @@
         swiper2.mount();
     </script>
 </body>
-
 </html>

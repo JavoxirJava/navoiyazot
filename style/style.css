@@ -47,7 +47,7 @@
     width: 1px !important;
     height: 100% !important;
     background-color: #FE9E42;
-    margin: 0 35px !important;
+    margin: 0 30px !important;
     padding: 0!important;
 }
 
@@ -63,7 +63,14 @@
 }
 
 .bg-brand-color {
-    background-color: var(--brand-color);
+    background-color: var(--brand-color) !important;
+    transition: all 0.5s ease;
+}
+
+.bg-brand-color:hover {
+    background-color: var(--bg-color) !important;
+    color: var(--brand-color) !important;
+    border: 1px solid var(--brand-color) !important;
 }
 
 .bg-brand-color2 {
@@ -90,17 +97,14 @@
 
 /* Har bir slayd */
 .slide {
-    min-width: 31%; /* 4 ta slayd ekranga sigishi uchun TODO min ni olish kerak*/
     padding: 20px;
     text-align: center;
     background-color: #f2f2f2;
     /*border: 1px solid #ccc;*/
     position: relative;
-
     flex: 0 0 25%;
     box-sizing: border-box;
 }
-
 /* Slider end */
 
 /* Slider start */
@@ -224,12 +228,12 @@
     height: 110px;
     background-color: var(--bg-white);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-main>div {
     max-width: var(--max-width);
-    width: calc(var(--max-width) - 250px);
-    margin: auto;
 }
 
 .navbar-main a, .navbar-main button {
@@ -303,7 +307,7 @@
     border-radius: 12px;
     position: absolute;
     top: 89%;
-    left: 50%;
+    left: min(45vw, 45%);
     font-family: var(--montserrat), sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -355,20 +359,20 @@
 .about-main .about-text h1 {
     margin-bottom: 20px;
     font-family: var(--montserrat), sans-serif;
-    font-size: 32px;
+    font-size: var(--fs-32);
     font-weight: 700;
 }
 
 .about-main .about-text p:last-child {
     font-family: var(--intel), sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-18);
     text-indent: 6px;
 }
 
 .about-main .about-text li {
     width: 90%;
     font-family: var(--intel), sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-20);
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -377,7 +381,7 @@
     width: 100%;
     height: 180px;
     font-family: var(--montserrat), sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-18);
     text-indent: -20px;
     background-color: var(--brand-color2);
     color: var(--color-white);
@@ -405,7 +409,7 @@
 }
 
 .product-main .row {
-    width: 1550px;
+    width: min(90vw, 120%);
 }
 
 .product-main .product-control {
@@ -471,7 +475,7 @@
 
 .product-main .product-slider .slide>div>p {
     font-family: var(--montserrat), sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-20);
     font-weight: 700;
     padding: 10px 0;
     margin: 0;
@@ -499,13 +503,13 @@
 
 .company-content h2 {
     font-family: var(--montserrat), sans-serif;
-    font-size: 32px;
+    font-size: var(--fs-32);
     font-weight: 700;
 }
 
 .company-content button {
     font-family: var(--montserrat), sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-18);
     font-weight: 500;
     padding: 8px 22px !important;
     margin: 30px 20px 30px 0;
@@ -520,7 +524,7 @@
 
 .company-content>p {
     font-family: var(--intel), sans-serif;
-    font-size: 18px;
+    font-size: var(--fs-18);
     text-indent: 6px;
 }
 
@@ -658,7 +662,7 @@
 .leaders-main .container h1,
 .news-main .container>h1 {
     font-family: var(--montserrat), sans-serif;
-    font-size: 32px;
+    font-size: var(--fs-32);
     font-weight: 700;
     padding: 0;
     margin-bottom: 60px;
@@ -801,7 +805,7 @@
 
 .connect-main .row>div:first-child h2 {
     font-family: var(--montserrat), sans-serif;
-    font-size: 54px;
+    font-size: calc(var(--fs-32) + var(--fs-22));
     font-weight: 700;
 }
 
@@ -927,7 +931,7 @@
 /* Footer start */
 
 .footer-main {
-    height: 438px;
+    min-height: 438px;
     background-color: var(--brand-color3);
     color: var(--color-white);
 }
