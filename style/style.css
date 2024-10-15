@@ -12,6 +12,7 @@
     --bg-color: #F1F1F1;
     --bg-white: #fff;
     --color-white: #fff;
+    --color-dark: #000;
     --jost: "Jost";
     --montserrat: "Montserrat";
     --dm-sans: "DM Sans";
@@ -211,7 +212,7 @@
 .header_contact_2>div:nth-child(5) button {
     background-color: var(--brand-color2);
     font-size: 18px;
-    padding: 8px 20px;
+    padding: 6px 18px;
     font-weight: 500;
 }
 
@@ -464,8 +465,13 @@
     padding: 0 8px;
 }
 
+.product-main .product-slider .slide {
+    display: flex;
+    justify-content: center;
+}
+
 .product-main .product-slider .slide>div {
-    width: 360px;
+    width: 290px;
     height: 91px;
     position: absolute;
     bottom: 0;
